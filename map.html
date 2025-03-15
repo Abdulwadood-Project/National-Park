@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Page</title>
+    <link rel="stylesheet" href="./css/map.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ </head>
+<body style="background-color: lightblue; font-family: 'Times New Roman', Times, serif;"> 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="padding: 0%;">
+        <div class="container-fluid">
+          <a href="./index.html">
+            <img src="./images/logo-removebg-preview.png" alt="logo" style="height: 70px;">
+          </a>
+        <h1 class="navbar-brand">FIORDLAND<br>
+             NATIONAL PARK</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./Thingstodo.html">Things to do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./place to visit.html">Place to visit</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./wildlife2.html">Wildlife</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./Safety guidelines.html">Guidelines</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./E-cat.html">Catalogue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./map.html">Map</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./signup.html">Signup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="./feedback.html">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="ctn" aria-current="page" href="./contact us.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+       <!-- map -->
+    <div class="main">
+        <h1>Welcome To Map</h1>
+        <button onclick="Getlocation()">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2844249.446178721!2d167.574097!3d-44.217361!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d40e4b61332aab%3A0xf62f33e5bd24b7ba!2sFiordland%20National%20Park!5e1!3m2!1sen!2sus!4v1740728977921!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </button>
+    </div>
+    </div>
+        <p id="output"></p>
+        <script>
+            function Getlocation(){
+                const output=document-getElementbyId("output");
+            }
+    
+            if("geolocation" in navigator){
+                navigator.geolocation.getCurrentPosition(position)
+            }
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            output.latitude.text="latitude"+"latitude"+"longitude"+"longitude"
+             </script>
+
+             <!-- footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2>National Park</h2>
+      <p>Explore the beauty of nature. Discover hiking trails, wildlife, and breathtaking views at our National Parks.Fiordland offers unforgettable adventures.</p>
+    
+    </div>
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="./index.html">Homepage</a></li>
+        <li><a href="./place to visit.html">Visit </a></li>
+        <li><a href="./contact us.html">Contact</a></li>
+        <li><a href="./map.html">Map</a></li>
+
+      </ul>
+    </div>
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 National Park. All rights reserved.</p>
+  </div>
+</footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
