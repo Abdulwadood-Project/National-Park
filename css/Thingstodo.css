@@ -83,7 +83,7 @@
     header{
         width: 100vw;
         height: 100vh;
-        background-image: url(/images/thingsdo.jpeg);
+        background-image: url(../images/thingsdo.jpeg);
         background-position: top;
         background-size: cover;
         display: flex;

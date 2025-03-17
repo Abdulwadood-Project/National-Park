@@ -84,7 +84,7 @@
   header{
     width: 100vw;
     height: 100vh;
-    background-image: url(/images/safety.avif);
+    background-image: url(../images/safety.avif);
     background-position: top;
     object-fit: cover;
     background-size: cover;
